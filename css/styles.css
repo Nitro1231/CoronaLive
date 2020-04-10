@@ -841,7 +841,7 @@ input[type='checkbox'] {
 	height: 6rem;
 	margin-right: auto;
 	margin-bottom: 0.25rem;
-	margin-left: 8.5rem;
+	margin-left: auto;
 }
 
 .slider-1 .card-body {
@@ -1314,8 +1314,8 @@ input[type='checkbox'] {
 .counter #counter .cell {
 	display: inline-block;
 	width: 6.25rem;
-	margin-right: 1rem;
-	margin-left: 1rem;
+	margin-right: 2rem;
+	margin-left: 2rem;
 	margin-bottom: 2rem;
 }
 
@@ -1531,9 +1531,42 @@ a:hover.back-to-top {
 }
 
 
+.iframe {
+	width: 100%;
+}
+
 /*****************************/
 /*     18. Media Queries     */
 /*****************************/	
+
+@media (min-width: 100px) {
+	.slider-1 .card-image {
+		width: 35%;
+		height: 35%;
+		margin-right: auto;
+		margin-bottom: 0.25rem;
+		margin-left: auto;
+	}
+
+	/* Statistics */
+	.counter {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+
+	.counter #counter .cell {
+		width: 10rem;
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+	
+	.counter #counter .counter-value {
+		font: 700 2rem "Montserrat", sans-serif;	
+	}
+	/* end of statistics */
+}
+
+
 /* Min-width width 768px */
 @media (min-width: 768px) {
 	
@@ -1692,7 +1725,22 @@ a:hover.back-to-top {
 		padding: 3rem 3rem;
 	}
 	/* end of details lightboxes */
-
+	
+	.slider-1 .card-image {
+		width: 6rem;
+		height: 6rem;
+		margin-right: auto;
+		margin-bottom: 0.25rem;
+		margin-left: auto;
+	}
+	
+	.slider-1 .card-body {
+		padding-bottom: 0;
+	}
+	
+	.slider-1 .testimonial-author {
+		margin-bottom: 0;
+	}
 
 	/* Screenshots */
 	.slider-2 .swiper-button-prev {
@@ -1736,6 +1784,23 @@ a:hover.back-to-top {
 		margin-left: auto;
 	}
 	/* end of extra pages */
+
+	/* Statistics */
+	.counter {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+
+	.counter #counter .cell {
+		width: 10rem;
+		margin-right: 3rem;
+		margin-left: 3rem;
+	}
+	
+	.counter #counter .counter-value {
+		font: 700 2rem "Montserrat", sans-serif;	
+	}
+	/* end of statistics */
 }
 /* end of min-width width 768px */
 
@@ -1780,7 +1845,6 @@ a:hover.back-to-top {
 		width: 65%;
 	}
 	/* end of general styles */
-
 
 	/* Header */
 	.header .header-content {
@@ -1912,7 +1976,7 @@ a:hover.back-to-top {
 
 	.counter #counter .cell {
 		width: 13rem;
-		margin-right: 2rem;
+		margin-right: 4rem;
 		margin-left: 4rem;
 	}
 	
@@ -2037,6 +2101,7 @@ a:hover.back-to-top {
 	/* end of features */
 
 
+	
 	/* Details 1 */
 	.basic-2 .text-container {
 		margin-top: 4.5rem;
