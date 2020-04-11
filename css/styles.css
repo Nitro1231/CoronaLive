@@ -159,6 +159,7 @@ a.white {
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s ease;
+	margin: 1%;
 }
 
 .btn-solid-lg:hover {
@@ -1310,20 +1311,24 @@ input[type='checkbox'] {
 	padding-top: 6.5rem;
 	padding-bottom: 5.375rem;
 	background-color: #1b1a1a;
+	margin-right: auto;
+	margin-left: auto;
 	text-align: center;
+	vertical-align: middle;
 }
 
 .counter #counter .cell {
 	display: inline-block;
 	width: 6.25rem;
-	margin-right: 2rem;
-	margin-left: 2rem;
+	margin-right: auto;
+	margin-left: auto;
 	margin-bottom: 2rem;
 }
 
 .counter #counter .counter-value {
 	color: #f1f1f8;
 	font: 700 3.5rem/4.25rem "Montserrat", sans-serif;	
+	text-align: center;
 	vertical-align: middle;
 }
 
@@ -1539,7 +1544,14 @@ a:hover.back-to-top {
 }
 
 .iframe {
+	visibility: visible;
 	width: 100%;
+	height: 600px;
+}
+
+.mapbtn {
+	visibility: visible;
+	width: 50%;
 }
 
 /*****************************/
@@ -1577,6 +1589,12 @@ a:hover.back-to-top {
 		font: 700 2rem "Montserrat", sans-serif;	
 	}
 	/* end of statistics */
+	
+	.iframe {
+		visibility: hidden;
+		width: 0px;
+		height: 0px;
+	}
 }
 
 
@@ -1819,6 +1837,22 @@ a:hover.back-to-top {
 		color: #fff;
 		font-size: 1.5rem;
 	}
+
+	.iframe {
+		visibility: visible;
+		width: 100%;
+		height: 600px;
+	}
+
+	.btn-container {
+		width: 100%;
+		text-align: center;
+	}
+
+	.table-btn {
+		margin-right: 5%;
+		margin-left: 5%;
+	}
 }
 /* end of min-width width 768px */
 
@@ -2018,6 +2052,12 @@ a:hover.back-to-top {
 	.ex-basic-2 .text-container.column {
 		margin-bottom: 0;
 	}
+
+	.iframe {
+		visibility: visible;
+		width: 100%;
+		height: 600px;
+	}
 	/* end of extra pages */
 }
 /* end of min-width width 992px */
@@ -2179,6 +2219,12 @@ a:hover.back-to-top {
 
 	.ex-basic-2 .image-container-small {
 		margin-left: 1.75rem;
+	}
+
+	.iframe {
+		visibility: visible;
+		width: 100%;
+		height: 600px;
 	}
 	/* end of extra pages */
 }
