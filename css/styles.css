@@ -645,8 +645,8 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 320px;
-	height: 64px;
+    width: 290px;
+	height: 58px;
 	margin-bottom: 1px;
 	-webkit-backface-visibility: hidden;
 }
@@ -1548,6 +1548,19 @@ a:hover.back-to-top {
 		margin-left: auto;
 	}
 
+	.navbar-custom .navbar-brand.logo-image img {
+		width: 200;
+		height: 40;
+		margin-bottom: 1px;
+		-webkit-backface-visibility: hidden;
+	}
+
+	.navbar-custom .navbar-toggler {
+		border: none;
+		color: #fff;
+		font-size: 1.5rem;
+	}
+
 	/* Statistics */
 	.counter {
 		padding-top: 0.5rem;
@@ -1801,6 +1814,19 @@ a:hover.back-to-top {
 		font: 700 2rem "Montserrat", sans-serif;	
 	}
 	/* end of statistics */
+
+	.navbar-custom .navbar-brand.logo-image img {
+		width: 200;
+		height: 40;
+		margin-bottom: 1px;
+		-webkit-backface-visibility: hidden;
+	}
+
+	.navbar-custom .navbar-toggler {
+		border: none;
+		color: #fff;
+		font-size: 1.5rem;
+	}
 }
 /* end of min-width width 768px */
 
