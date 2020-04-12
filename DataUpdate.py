@@ -7,11 +7,11 @@ urllib.request.urlretrieve(URL, 'data/data.json')
 URL = 'https://raw.githubusercontent.com/Nitro1231/COVID-19-Actions/master/LastUpdated/map.html'
 urllib.request.urlretrieve(URL, 'data/map.html')
 
-with open('index_template.html') as f:
+with open('index_template.html','r', encoding='UTF8') as f:
     html = f.read()
 f.close
 
-with open('data/data.json') as f:
+with open('data/data.json','r', encoding='UTF8') as f:
     jsonData = json.load(f)
 f.close
 
@@ -35,6 +35,6 @@ html = html.replace('total_confirmed', total_confirmed).replace('total_deaths', 
 html = html.replace('difference_confirmed', difference_confirmed).replace('difference_deaths', difference_deaths).replace('difference_recovered', difference_recovered).replace('difference_active', difference_active)
 html = html.replace('mortality_rate', mortality_rate).replace('recovery_rate', recovery_rate)
 
-with open('index.html', 'w') as f:
+with open('index.html', 'w', encoding='UTF8') as f:
     f.write(html)
 f.close
