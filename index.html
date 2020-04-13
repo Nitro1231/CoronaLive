@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="CoronaLive shares the data of the COVID-19 virus in real time.">
+    <meta name="author" content="Jun Park">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="CoronaLive" /> <!-- website name -->
+	<meta property="og:site" content="http://nitro1231.github.io/" /> <!-- website link -->
+	<meta property="og:title" content="CoronaLive - A Real-Time dashboard of COVID-19"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="CoronaLive shares the data about COVID-19 in real-time." /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="images/header-background.jpg" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:type" content="website" />
+
+    <!-- Website Title -->
+    <title>CoronaLive</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163455611-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163455611-1');
+    </script>
+
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Leno</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a> 
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#map">MAP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#graph">GRAPH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#data">DATA TABLE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#apps">APPS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#info">INFO</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">LANGUAGE</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html"><span class="item-text">ENGLISH</span></a>
+                        <!--<div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="index_ko.html"><span class="item-text">KOREAN(한국어)</span></a>-->
+                    </div>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://github.com/Nitro1231">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-envelope fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1>CORONALIVE <br>STAY <span id="js-rotating">SAFE, HEALTHY, HOME, AWARE</span></h1>
+                            <p class="p-large">CoronaLive shares the data about COVID-19 in real-time.</p>
+                            <a class="btn-solid-lg page-scroll" href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#:~:text=symptoms">SYMPTOMS</a>
+                            <a class="btn-solid-lg page-scroll" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">Public Advice</a>
+                        </div>
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <!-- <img class="img-fluid" src="images/header-iphone.png" alt="alternative"> -->
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <!-- Testimonials -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/Confirmed.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="counter">
+                                                <div id="counter">
+                                                    <div class="cell">
+                                                        <div class="counter-value number-count" data-count="1846679">1</div> <p></p>
+                                                        <p class="counter-info">Total Confirmed</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/Death.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="counter">
+                                                <div id="counter">
+                                                    <div class="cell">
+                                                        <div class="counter-value number-count" data-count="114091">1</div> <p></p>
+                                                        <p class="counter-info">Total Deaths</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/Recovered.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="counter">
+                                                <div id="counter">
+                                                    <div class="cell">
+                                                        <div class="counter-value number-count" data-count="421722">1</div> <p></p>
+                                                        <p class="counter-info">Total Recovered</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/Active.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="counter">
+                                                <div id="counter">
+                                                    <div class="cell">
+                                                        <div class="counter-value number-count" data-count="1310866">1</div> <p></p>
+                                                        <p class="counter-info">Total Active</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/Mortality_Rate.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="counter">
+                                                <div id="counter">
+                                                    <div class="cell">
+                                                        <div class="counter-value number-count" data-count="6.18">1</div> <p>%</p>
+                                                        <p class="counter-info">Mortality Rate</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/Mask.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <div class="counter">
+                                                <div id="counter">
+                                                    <div class="cell">
+                                                        <div class="counter-value number-count" data-count="22.84">1</div> <p>%</p>
+                                                        <p class="counter-info">Recovery Rate</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of testimonials -->
+
+    <!-- MAP -->
+    <div id="map" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>LIVE MAP</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <iframe class ='iframe' src="data/map.html" frameborder="0" allowfullscreen></iframe>
+            <a class="btn-solid-lg page-scroll" href="data/map.html" target="_blank">Open in New Tab</a>
+            <a class="btn-solid-lg page-scroll" href="https://bit.ly/2Rv3M6h" target="_blank">Map by Johns Hopkins University</a>
+        </div> <!-- end of container --> 
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+
+    <!-- graph -->
+    <div id="graph" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>GRAPH</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <img class="img-fluid" src="https://github.com/Nitro1231/COVID-19-Actions/blob/master/LastUpdated/Img/global_linear_t.png?raw=true" alt="alternative">
+                <img class="img-fluid" src="https://github.com/Nitro1231/COVID-19-Actions/blob/master/LastUpdated/Img/global_log_t.png?raw=true" alt="alternative">
+                <img class="img-fluid" src="https://github.com/Nitro1231/COVID-19-Actions/blob/master/LastUpdated/Img/top10_t.png?raw=true" alt="alternative">
+                <div class="col-lg-12">
+                    <h3></br>Prediction<br></h3>
+                    <p>This is just prediction... Don't panic.</p>
+                </div> <!-- end of col -->
+                <img class="img-fluid" src="https://github.com/Nitro1231/COVID-19-Actions/blob/master/LastUpdated/Img/prediction_t.png?raw=true" alt="alternative">
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 1 -->
+
+    <!-- data -->
+    <div id="data" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>DATA TABLE</h2>
+                    <div class="p-heading p-large">We will provide better view of this section soon.</div>
+                    <div class="btn-container">
+                        <a class="btn-solid-lg page-scroll" href="https://github.com/Nitro1231/COVID-19-Actions/blob/master/LastUpdated/Reorganized/combined.csv" target="_blank">Combined Data</a>
+                        <a class="btn-solid-lg page-scroll" href="https://github.com/Nitro1231/COVID-19-Actions/blob/master/LastUpdated/Reorganized/confirmed.csv" target="_blank">Confirmed Cases</a>
+                        <a class="btn-solid-lg page-scroll" href="https://github.com/Nitro1231/COVID-19-Actions/blob/master/LastUpdated/Reorganized/deaths.csv" target="_blank">Deaths Cases</a>
+                        <a class="btn-solid-lg page-scroll" href="https://github.com/Nitro1231/COVID-19-Actions/blob/master/LastUpdated/Reorganized/recovered.csv" target="_blank">Recovered Cases</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of container --> 
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+
+    <!-- Details 1 -->
+    <div id="apps" class="basic-2">
+        <div class="container">
+            <h2>APPS</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/Discord-Logo+Wordmark-Color.svg" alt="alternative">
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>COVID-19 Discord Bot</h3>
+                        <p>It is almost there. Comming soon.</p>
+                        <a class="btn-solid-lg page-scroll" href="https://bit.ly/2UZPfRT">Invite Bot</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 1 -->
+
+    <!-- Details 2 -->
+    <div class="basic-3">
+        <div class="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>Facebook Messenger Bot</h3>
+                            <p>This might take some time...</p>
+                            <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">Not Available Yet</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="images/Messenger.png" alt="alternative">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->    
+    <!-- end of details 2 -->
+
+    <!-- Contact -->
+    <div id="info" class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>INFORMATIONS</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <h3>Graphs, Data Tables, and Maps</h3>
+                        <li class="address">All of the above Graphs, Data Tables, and Maps are provided by <a class="turquoise" href="http://nitro1231.github.io/">NitroStudio</a> and its <a class="turquoise" href="https://github.com/Nitro1231/COVID-19-Actions">Data Repository</a>.</li>
+                    </br>
+                        <h3>Data Source</h3>
+                        <li class="address">The data files, used in this site are derived from <a class="turquoise" href="https://github.com/Nitro1231/COVID-19-Actions">NitroStudio Data Repository</a>, and all of data from <a class="turquoise" href="https://github.com/CSSEGISandData/COVID-19">NitroStudio Data Repository</a> are based on the Data by <a class="turquoise" href="https://github.com/Nitro1231/COVID-19-Actions">Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)</a>.</li>
+                    </br>
+                        <h3>Data Update Frequency</h3>
+                        <li class="address">Data is updated roughly three times per day.</li>
+                    </br>
+                        <h3>Icons</h3>
+                        <li class="address">Icons made by Monkik, Freepik, and Eucalyp from <a class="turquoise" href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form -->
+    <!-- end of contact -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>About CoronaLive</h4>
+                        <p>CoronaLive shares the data about COVID-19 in real-time.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">All Graphs, Data Tables, and Maps are provided by <a class="turquoise" href="http://nitro1231.github.io/">NitroStudio</a>.</div>
+                            </li>
+                            <!--<li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Read our <a class="turquoise" href="terms-conditions.html">Terms & Conditions</a>, <a class="turquoise" href="privacy-policy.html">Privacy Policy</a></div>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <span class="fa-stack">
+                            <a href="https://nitro1231.github.io/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-book fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="mailto:nitr0@naver.com">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://github.com/Nitro1231">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> and <a href="https://nitro1231.github.io/">NitroStudio</a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
