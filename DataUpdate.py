@@ -1,3 +1,4 @@
+import os
 import json
 import urllib.request
 
@@ -34,6 +35,9 @@ recovery_rate =  str(round(recovery_rate * 100, 2))
 html = html.replace('total_confirmed', total_confirmed).replace('total_deaths', total_deaths).replace('total_recovered', total_recovered).replace('total_active', total_active)
 html = html.replace('difference_confirmed', difference_confirmed).replace('difference_deaths', difference_deaths).replace('difference_recovered', difference_recovered).replace('difference_active', difference_active)
 html = html.replace('mortality_rate', mortality_rate).replace('recovery_rate', recovery_rate)
+
+if os.path.isfile('index.html'):
+  os.remove('index.html')
 
 with open('index.html', 'w', encoding='UTF8') as f:
     f.write(html)
