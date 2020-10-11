@@ -1,0 +1,15 @@
+{
+  "short_name": "CoronaLive",
+  "name": "CoronaLive - A Real-Time dashboard of COVID-19",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff415b",
+  "background_color": "#252525"
+}
