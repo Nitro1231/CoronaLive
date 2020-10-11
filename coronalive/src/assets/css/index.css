@@ -41,7 +41,7 @@ p {
 
 strong {
     font-weight: bold;
-    color: #f1c40f;
+    color: #f39c12;
 }
 
 .center {
@@ -78,6 +78,14 @@ strong {
     height: 100%;
 }
 
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 230px;
+    height: auto;
+}
+
 .introBox {
     position: absolute;
     top:25%;
@@ -91,8 +99,8 @@ strong {
 */
 .btn {
     display: inline-block;
-	padding: 1rem 2rem 1rem 2rem;
-	border: 0.125rem solid #f39c12;
+	padding: 10px 20px 10px 20px;
+	border: 2px solid #f39c12;
 	border-radius: 2rem;
 	background-color: #f39c12;
     color: #fff;
@@ -112,13 +120,18 @@ strong {
     Tab
 */
 .tabBox {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
     height: 70px;
-    margin-bottom: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    background-color: rgb(25, 25, 25);
 }
 
 .tabItem {
@@ -139,17 +152,17 @@ strong {
 .tabItem:hover {
     padding-left: 30px;
     padding-right: 30px;
-    background-color: rgb(45, 45, 45) !important;
+    background-color: rgb(50, 50, 50) !important;
 }
 
 .tabItem.enable {
     padding-left: 40px;
     padding-right: 40px;
-    background: linear-gradient(45deg, #28f29c, #0cb8e0);
+    background: linear-gradient(135deg, #FCA96B, #DC4647);
 }
 
 .tabItem.disable {
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(40, 40, 40);
 }
 
 /*
@@ -172,32 +185,6 @@ strong {
     margin-left: auto;
     margin-right: auto;
     transition: 0.5s;
-}
-
-/*
-    About Me
-*/
-
-.profileBox {
-    display: flex;
-    width: 100%;
-}
-
-.profileImg {
-    width: 30%;
-    height: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    border-radius: 100%;
-    background-color: rgb(20, 20, 20);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
-    transition: 0.5s;
-}
-
-.profileImg:hover {
-    width: 35%;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
 }
 
 .color1 {
